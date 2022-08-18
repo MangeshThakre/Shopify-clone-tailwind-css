@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shotify-clone-tailwind-css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              homeBG: "#fbf7ed",
+              darkFont: "#42474c",
+              darkGreen: "#004c3f",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="flex justify-center sticky top-0 items-center bg-homeBG px-24">
+      <div class="md:h-20 flex flex-row justify-between w-[91rem]">
+        <!-- left -->
+        <div class="flex items-center text-darkFont">
+          <img class="w-36" src="./assets/shopify-logo.png" alt="logo" />
+          <ul class="md:flex ml-4 justify-between w-96 hidden">
+            <li
+              class="text-base font-semibold w-16 hover:text-black cursor-pointer"
+            >
+              Start
+              <img class="inline w-3" src="./assets/arrowDown.png" alt="logo" />
+            </li>
+            <li
+              class="text-base font-semibold w-16 hover:text-black cursor-pointer"
+            >
+              Sell
+              <img class="inline w-3" src="./assets/arrowDown.png" alt="logo" />
+            </li>
+            <li
+              class="text-base font-semibold w-20 hover:text-black cursor-pointer"
+            >
+              Market
+              <img class="inline w-3" src="./assets/arrowDown.png" alt="logo" />
+            </li>
+            <li
+              class="text-base font-semibold w-20 hover:text-black cursor-pointer"
+            >
+              Manage
+              <img class="inline w-3" src="./assets/arrowDown.png" alt="logo" />
+            </li>
+          </ul>
+        </div>
+        <!-- left end -->
+        <!-- right -->
+        <div>
+          <ul class="md:flex items-center justify-between h-full w-96 hidden">
+            <li
+              class="text-base font-semibold w-16 hover:text-black cursor-pointer"
+            >
+              Pricing
+            </li>
+            <li
+              class="text-base font-semibold w-16 hover:text-black cursor-pointer"
+            >
+              Learn
+              <img
+                class="w-3 inline"
+                src="./assets/arrowDown.png"
+                alt="arrow down"
+              />
+            </li>
+            <li
+              class="text-base font-semibold w-16 hover:text-black cursor-pointer"
+            >
+              Log in
+            </li>
+            <li
+              class="bg-[#008060] text-white h-10 flex justify-center items-center w-32 font-semibold rounded-md"
+            >
+              Try for Free
+            </li>
+          </ul>
+        </div>
+        <!-- right end -->
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- section one -->
+    <section class="w-full bg-homeBG flex justify-center py-32 items-center">
+      <div class="flex md:flex-row flex-col px-[5%]">
+        <!-- left -->
+        <div
+          class="md:pr-20 pl-3 md:max-w-[700px] flex flex-col justify-center"
+        >
+          <h1
+            class="text-darkGreen text-5xl font-bold mb-8 md:text-left text-center"
+          >
+            The easiest way to sell online in India
+          </h1>
+          <p class="mb-8 text-xl text-gray-500 md:text-left text-center">
+            Try one of the most powerful platforms on the market for free. No
+            technical knowledge needed.
+          </p>
+          <div class="flex items-center gap-4 mb-8 md:flex-row flex-col">
+            <input
+              class="p-3.5 outline-green-800 max-w-[470px] border-2 w-full"
+              type="email "
+              placeholder="Emter your Email Adderss"
+            />
+            <div
+              class="bg-[#008060] md:mx-0 mx-auto text-white h-12 flex justify-center items-center md:w-40 w-full max-w-[470px] font-semibold rounded-md"
+            >
+              Try for Free
+            </div>
+          </div>
+          <p class="text-[12.2px] md:text-left text-center mb-8">
+            Try Shopify free for 14 days, no credit card required. By entering
+            your email, you agree to receive marketing<br />
+            emails from Shopify.
+          </p>
+        </div>
+        <!-- left end -->
+        <!-- right  -->
+        <div>
+          <img class="w-[50rem]" src="./assets/home img.webp" alt="" />
+        </div>
+        <!-- right end  -->
+      </div>
+    </section>
+    <!-- section one  -->
+
+    <!-- seciton two -->
+    <section class="md:max-w-[1600px] bg-darkGreen py-16">
+      <div class="flex flex-wrap px-[5%] text-white">
+        <!-- header  -->
+        <div
+          class="flex items-end flex-wrap justify-between gap-3 basis-full mb-14"
+        >
+          <div>
+            <h1 class="text-[2.5rem]">Bring your business online</h1>
+            <p>
+              Create an ecommerce website backed by powerful tools that help you
+              find customers, drive sales, and manage your day-to-day.
+            </p>
+          </div>
+          <div class="md:w-52">
+            <p class="font-semibold cursor-pointer mx-auto">
+              Explore more examples
+            </p>
+          </div>
+        </div>
+        <!-- header end -->
+      </div>
+    </section>
+
+    <!-- section two end -->
+  </body>
 </html>
