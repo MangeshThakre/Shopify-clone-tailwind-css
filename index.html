@@ -46,8 +46,10 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="flex justify-center sticky top-0 items-center bg-homeBG px-24">
-      <div class="md:h-20 flex flex-row justify-between w-[91rem]">
+    <nav
+      class="flex justify-center sticky top-0 items-center bg-homeBG px-[5%] pt-3"
+    >
+      <div class="md:h-20 flex flex-row justify-between items-center w-[91rem]">
         <!-- left -->
         <div class="flex items-center text-darkFont">
           <img class="w-36" src="./assets/shopify-logo.png" alt="logo" />
@@ -108,6 +110,16 @@
               Try for Free
             </li>
           </ul>
+          <div class="md:hidden flex gap-4">
+            <p
+              class="text-2xl font-semibold hover:text-gray-700 cursor-pointer text-gray-600"
+            >
+              Log in
+            </p>
+            <div class="cursor-pointer">
+              <img src="./assets/icons8-menu.svg" alt="menu" />
+            </div>
+          </div>
         </div>
         <!-- right end -->
       </div>
@@ -345,7 +357,7 @@
     <!-- seciton three -->
     <section class="flex flex-col items-center gap-12 py-20">
       <!-- section three head -->
-      <div class="max-w-[604px] my-16">
+      <div class="max-w-[604px] my-16 md:px-0 mx-8">
         <h1 class="text-4xl text-center m-4">With you wherever you’re going</h1>
         <p class="text-gray-400 text-center text-lg">
           With you wherever you’re going One platform with all the ecommerce and
@@ -354,9 +366,11 @@
       </div>
       <!-- section three head end -->
       <!-- block one -->
-      <div class="flex md:flex-row justify-center items-center flex-col">
+      <div
+        class="flex md:flex-row justify-center items-center flex-col md:text-left text-center md:px-0 mx-8"
+      >
         <!-- left -->
-        <div class="w-1/2 flex justify-center items-center">
+        <div class="md:w-1/2 flex justify-center items-center">
           <div class="md:w-4/5">
             <video
               muted="muted"
@@ -403,10 +417,10 @@
       <!-- block one end -->
       <!-- block two -->
       <div
-        class="flex md:flex-row-reverse justify-center items-center flex-col"
+        class="flex md:flex-row-reverse justify-center items-center flex-col md:text-left text-center md:px-0 mx-8"
       >
         <!-- left -->
-        <div class="w-[40%] flex justify-center items-center">
+        <div class="md:w-[40%] flex justify-center items-center">
           <img
             class="w-[80%]"
             src="./assets/section three block two img.webp"
@@ -430,9 +444,11 @@
       <!-- block-two end -->
 
       <!-- block three  -->
-      <div class="flex md:flex-row justify-center items-center flex-col">
+      <div
+        class="flex md:flex-row justify-center items-center flex-col md:text-left text-center md:px-0 mx-8"
+      >
         <!-- left -->
-        <div class="w-[50%] flex justify-center items-center">
+        <div class="md:w-[50%] flex justify-center items-center">
           <img
             src="./assets/section three block three.png"
             alt="section three block img"
@@ -510,60 +526,440 @@
     <!-- seciton four  end-->
 
     <!-- section five -->
-    <section class="py-12 justify-center">
-      <div class="md:px-[10%] flex flex-col">
-        <!-- content -->
-        <div class="mb-11">
-          <h1 class="text-4xl">
-            Empowering independent business<br />
-            owners everywhere
-          </h1>
-          <p class="text-2xl my-6">
-            Millions of businesses in <b>175 countries</b> around the world
-            have<br />
-            made over <b>$496 billion</b> USD in sales using Shopify.
-          </p>
-          <div class="cursor-pointer md:my-0 my-4">
-            <p class="text-[#008060] font-semibold mb-4">
-              Learn more about Shopify
+    <section class="py-12 justify-center md:text-left text-center">
+      <div class="flex justify-center">
+        <div class="md:px-[10%] flex flex-col">
+          <!-- content -->
+          <div class="mb-11">
+            <h1 class="text-4xl">
+              Empowering independent business<br />
+              owners everywhere
+            </h1>
+            <p class="text-2xl my-6">
+              Millions of businesses in <b>175 countries</b> around the world
+              have<br />
+              made over <b>$496 billion</b> USD in sales using Shopify.
             </p>
+            <div class="cursor-pointer md:my-0 my-4">
+              <p class="text-[#008060] font-semibold mb-4">
+                Learn more about Shopify
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- globe -->
-        <div class="max-h-[650px] max-w-[1337px]">
-          <img src="./assets/glob.png" alt="glob" />
+          <!-- globe -->
+          <div class="max-h-[650px] max-w-[1337px]">
+            <img src="./assets/glob.png" alt="glob" />
+          </div>
         </div>
       </div>
     </section>
     <!-- section five end -->
 
     <!-- section six -->
-    <section class="flex  justify-center bg-dardGreen">
-      <div class="flex md:flex-row flex-col">
+    <section class="flex justify-center w-full my-24">
+      <div class="flex md:flex-row md:flex-wrap flex-col md:max-w-[1350px]">
         <!-- left -->
-        <div class="w-1/2 h-full">
-          <img class="w-full" src="./assets/section six img.jpg" alt="img" />
+        <div class="md:w-1/2 h-full">
+          <img
+            class="w-full h-full object-cover"
+            src="./assets/section six img.jpg"
+            alt="img"
+          />
         </div>
         <!-- right -->
-        <div class="p-8">
-          <h1>
-            “Shopify was my knight in shining armor when I exhausted every other
-            possibility of getting my online store up and running. It was
-            stunningly easy to use, with more features and plug-ins that I
-            didn’t even know I wanted.”
-          </h1>
-          <img src="./assets/section six icon.png" alt="icon" />
-          <p>Alicia | Alicia Souza</p>
+        <div class="px-8 py-10 md:w-1/2 bg-[#002e25]">
+          <div class="mx-auto flex flex-col items-center md:w-4/5 pt-9">
+            <h1
+              class="text-center text-white text-xl md:text-3xl font-semibold mx-5 mb-8 md:mb-16"
+            >
+              “Shopify was my knight in shining armor when I exhausted every
+              other possibility of getting my online store up and running. It
+              was stunningly easy to use, with more features and plug-ins that I
+              didn’t even know I wanted.”
+            </h1>
+            <img
+              class="w-32 md:w-40"
+              src="./assets/section six icon.png"
+              alt="icon"
+            />
+            <p class="text-white font-semibold text-base md:text-xl mt-8">
+              Alicia | Alicia Souza
+            </p>
+          </div>
         </div>
         <!-- bottom -->
-        <div class="basis-full"></div>
+        <div
+          class="basis-full w-full px-8 flex justify-evenly my-12 gap-5 md:gap-14"
+        >
+          <img class="w-1/6" src="./assets/section six brand 1.webp" alt="" />
+          <img class="w-1/6" src="./assets/section six brand 2.webp" alt="" />
+          <img class="w-1/6" src="./assets/section six brand 3.png" alt="" />
+          <img class="w-1/6" src="./assets/section 6 brand 4.webp" alt="" />
+          <img class="w-1/6" src="./assets/section 6 brand 6.webp" alt="" />
+          <img class="w-1/6" src="./assets/section 6 brand 7.webp" alt="" />
+        </div>
       </div>
     </section>
     <!-- section six end -->
+
+    <!-- section seven -->
+    <section class="flex justify-center py-24">
+      <div
+        class="flex bg-[#fbf7ed] relative md:flex-row px-[5%] py-24 w-[1600px] flex-col"
+      >
+        <!-- left -->
+        <div class="md:w-2/4 text-center md:text-left">
+          <h1
+            class="text-4xl text-center mb-8 md:max-w-md items-center md:items-start"
+          >
+            Get the help you need, every step of the way
+          </h1>
+          <div class="flex flex-col items-center md:items-start">
+            <div class="flex md:flex-row flex-col gap-4">
+              <div class="max-w-[293.6px] my-3">
+                <h1 class="text-lg font-semibold mb-5">Shopify support</h1>
+                <p class="text-base mb-6 text-gray-600">
+                  Contact support 24/7, whether you’re troubleshooting issues or
+                  looking for business advice.
+                </p>
+                <div></div>
+
+                <div class="cursor-pointer md:my-0 my-4">
+                  <p class="text-[#008060] font-semibold">contact support</p>
+                </div>
+              </div>
+              <div class="max-w-[293.6px] my-3">
+                <h1 class="text-lg font-semibold mb-5">Shopify App Store</h1>
+                <p class="text-base mb-6 text-gray-600">
+                  Add features and functionality to your business with 6,000+
+                  apps that integrate directly with Shopify.
+                </p>
+                <div></div>
+
+                <div class="cursor-pointer md:my-0 my-4">
+                  <p class="text-[#008060] font-semibold">
+                    visti the shopify app store
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="max-w-[293.6px] my-3">
+              <h1 class="text-lg font-semibold mb-5">
+                Shopify Experts Marketplace
+              </h1>
+              <p class="text-base mb-6 text-gray-600">
+                Hire a Shopify expert to help you with everything from store
+                setup to SEO.
+              </p>
+              <div></div>
+
+              <div class="cursor-pointer md:my-0 my-4">
+                <p class="text-[#008060] font-semibold">
+                  Explore the shopify Experts marketplace
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="top-0 md:absolute block right-0 h-full md:w-1/2">
+          <img
+            class="w-[100%] h-[100%] object-cover block"
+            src="./assets/section seven img.webp"
+            alt="img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section seven -->
+
+    <!-- section eight -->
+    <section class="flex items-center flex-col pb-10 px-8">
+      <div>
+        <h1 class="text-center text-3xl">
+          Start your business journey with Shopify
+        </h1>
+
+        <p class="text-center my-7 text-gray-600 text-lg max-w-3xl">
+          Try Shopify for free, and explore all the tools and services you need
+          to start, run, and grow your business.
+        </p>
+        <div
+          class="bg-[#008060] hover:shadow-lg hover:bg-darkGreen cursor-pointer mx-auto text-white h-12 flex justify-center items-center md:w-40 w-full max-w-[470px] font-semibold rounded-md"
+        >
+          start free tiral
+        </div>
+      </div>
+      <div class="w-3/4 mt-16 cursor-pointer">
+        <h1 class="text-lg md:float-right font-semibold text-[#008060]">
+          Back to top
+        </h1>
+      </div>
+    </section>
+    <!-- section eight end -->
+
+    <!-- footer -->
+    <footer class="flex justify-center bg-[#002e25]">
+      <div class="px-[5%] text-white">
+        <ul
+          class="flex justify-start h-16 py-8 gap-8 flex-wrap items-center border-gray-500"
+        >
+          <li
+            class="h-15 cursor-pointer hover:border-b-2 flex justify-center items-center font-semibold"
+          >
+            About
+          </li>
+          <li
+            class="h-15 cursor-pointer hover:border-b-2 flex justify-center items-center font-semibold"
+          >
+            Carrers
+          </li>
+          <li
+            class="h-15 cursor-pointer hover:border-b-2 flex justify-center items-center font-semibold"
+          >
+            Press and Media
+          </li>
+          <li
+            class="h-15 hover:border-b-2 cursor-pointer flex justify-center items-center font-semibold"
+          >
+            Shopify Plus
+          </li>
+          <li
+            class="h-15 hover:border-b-2 cursor-pointer flex justify-center items-center font-semibold"
+          >
+            Sitemap
+          </li>
+        </ul>
+        <div
+          class="flex flex-wrap py-8 gap-8 border-t-[1px] border-x-gray-700 border-b-[1px]"
+        >
+          <!-- one -->
+          <div>
+            <h1 class="font-semibold mb-3">ONLINE STORE</h1>
+            <ul class="flex flex-wrap gap-1 justify-between md:w-[40rem]">
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Sell online
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Features
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Examples
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Website builder
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                online retail
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Ecommerce website
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Domain name
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Themes
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Shopping Cart
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Econnerce hosting
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Mobile commerce
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Ecommerse Software
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                online store
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                dropshoppind business
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Store theme
+              </li>
+            </ul>
+          </div>
+          <!-- two -->
+          <div>
+            <h1 class="font-semibold mb-3">PONTS OF SALE</h1>
+            <ul>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Point of sale
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Features
+              </li>
+            </ul>
+          </div>
+          <!-- three -->
+          <div>
+            <h1 class="font-semibold mb-3">SUPPORT</h1>
+            <ul>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                24/7 support
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Shopify Hilp cebter
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Shopify cummunity
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                API dicumebtitation
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Free tools
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Free Stocks Photos
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Websites for sale
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Logo maker
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Buysiness name generator
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                research
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Legal
+              </li>
+            </ul>
+          </div>
+          <!-- four -->
+          <div>
+            <h1 class="font-semibold mb-3">SHOPIFY</h1>
+            <ul>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Contact
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Partner program
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Affiliate program
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                App developers
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Investors
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Blog topics
+              </li>
+              <li
+                class="text-gray-500 w-44 text-sm cursor-pointer hover:text-gray-300 mb-2"
+              >
+                Community Events
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="py-4 flex justify-between w-full items-center gap-4 md:flex-row flex-col"
+        >
+          <div class="flex gap-4">
+            <img class="w-5 h-5" src="./assets/fb.svg" alt="" />
+            <img class="w-5 h-5" src="./assets/icons8-instagram.svg" alt="" />
+            <img
+              class="w-5 h-5"
+              src="./assets/icons8-twitter-circled.svg"
+              alt=""
+            />
+            <img class="w-5 h-5" src="./assets/icons8-youtube.svg" alt="" />
+            <img class="w-5 h-5" src="./assets/ln.svg" alt="" />
+          </div>
+          <div class="flex items-center">
+            <p class="text-gray-600 text-sm">Terms of Service Privacy Policy</p>
+            <p class="text-gray-300 mx-4">India</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
   </body>
   <script>
     const video = document.querySelector("#video");
     const play_pause = document.querySelector("#play_pause");
+    x;
     const pause = document.querySelector("#pause");
     const play = document.querySelector("#play");
   </script>
