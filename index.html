@@ -20,6 +20,29 @@
         },
       };
     </script>
+    <style>
+      .hide {
+        display: none;
+      }
+
+      @media (max-width: 1206px) {
+        .hide-four,
+        .hide-five {
+          display: none;
+        }
+      }
+      @media (max-width: 1516px) {
+        .hide-five {
+          display: none;
+        }
+      }
+
+      @media (max-width: 902px) {
+        .hide-four {
+          display: inline;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
@@ -28,7 +51,7 @@
         <!-- left -->
         <div class="flex items-center text-darkFont">
           <img class="w-36" src="./assets/shopify-logo.png" alt="logo" />
-          <ul class="md:flex ml-4 justify-between w-96 hidden">
+          <ul class="lg:flex ml-4 justify-between w-96 hidden">
             <li
               class="text-base font-semibold w-16 hover:text-black cursor-pointer"
             >
@@ -58,7 +81,7 @@
         <!-- left end -->
         <!-- right -->
         <div>
-          <ul class="md:flex items-center justify-between h-full w-96 hidden">
+          <ul class="lg:flex items-center justify-between h-full w-96 hidden">
             <li
               class="text-base font-semibold w-16 hover:text-black cursor-pointer"
             >
@@ -80,7 +103,7 @@
               Log in
             </li>
             <li
-              class="bg-[#008060] text-white h-10 flex justify-center items-center w-32 font-semibold rounded-md"
+              class="bg-[#008060] text-white hover:shadow-lg hover:bg-darkGreen cursor-pointer h-10 flex justify-center items-center w-32 font-semibold rounded-md"
             >
               Try for Free
             </li>
@@ -93,7 +116,7 @@
 
     <!-- section one -->
     <section class="w-full bg-homeBG flex justify-center py-32 items-center">
-      <div class="flex md:flex-row flex-col px-[5%]">
+      <div class="flex md:flex-row justify-center flex-col px-[5%]">
         <!-- left -->
         <div
           class="md:pr-20 pl-3 md:max-w-[700px] flex flex-col justify-center"
@@ -114,7 +137,7 @@
               placeholder="Emter your Email Adderss"
             />
             <div
-              class="bg-[#008060] md:mx-0 mx-auto text-white h-12 flex justify-center items-center md:w-40 w-full max-w-[470px] font-semibold rounded-md"
+              class="bg-[#008060] hover:shadow-lg hover:bg-darkGreen cursor-pointer md:mx-0 mx-auto text-white h-12 flex justify-center items-center md:w-40 w-full max-w-[470px] font-semibold rounded-md"
             >
               Try for Free
             </div>
@@ -127,8 +150,32 @@
         </div>
         <!-- left end -->
         <!-- right  -->
-        <div>
-          <img class="w-[50rem]" src="./assets/home img.webp" alt="" />
+        <div class="flex justify-center md:w-2/4">
+          <div class="hidden md:inline">
+            <video id="video" muted="" autoplay="" loop="loop">
+              <source
+                type="video/webm"
+                src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-97d1a3f03a5f9e8d85306e06358d6cff68f2316530f6a1b8a81e0440ee684ea9.webm"
+              />
+            </video>
+            <div
+              id="play_pause"
+              class="cursor-pointer float-right hidden md:block"
+            >
+              <img id="play" class="w-5" src="./assets/play.svg" alt="play" />
+              <img
+                id="pause"
+                class="hide w-5"
+                src="./assets/pause.svg"
+                alt="pause"
+              />
+            </div>
+          </div>
+          <img
+            class="w-[50rem] md:hidden"
+            src="./assets/home img.webp"
+            alt=""
+          />
         </div>
         <!-- right end  -->
       </div>
@@ -136,29 +183,388 @@
     <!-- section one  -->
 
     <!-- seciton two -->
-    <section class="md:max-w-[1600px] bg-darkGreen py-16">
-      <div class="flex flex-wrap px-[5%] text-white">
-        <!-- header  -->
-        <div
-          class="flex items-end flex-wrap justify-between gap-3 basis-full mb-14"
-        >
-          <div>
-            <h1 class="text-[2.5rem]">Bring your business online</h1>
-            <p>
-              Create an ecommerce website backed by powerful tools that help you
-              find customers, drive sales, and manage your day-to-day.
-            </p>
+    <div class="w-full flex justify-center">
+      <section
+        class="md:max-w-[1600px] flex-col bg-darkGreen py-16 flex justify-center"
+      >
+        <div class="flex flex-wrap px-[5%] text-white gap-4 justify-center">
+          <!-- header  -->
+          <div
+            class="flex items-end flex-wrap justify-between gap-3 basis-full mb-14"
+          >
+            <div>
+              <h1 class="text-[2.5rem]">Bring your business online</h1>
+              <p>
+                Create an ecommerce website backed by powerful tools that help
+                you find customers, drive sales, and manage your day-to-day.
+              </p>
+            </div>
+            <div class="md:w-52">
+              <p class="font-semibold cursor-pointer mx-auto">
+                Explore more examples
+              </p>
+            </div>
           </div>
-          <div class="md:w-52">
-            <p class="font-semibold cursor-pointer mx-auto">
-              Explore more examples
+          <!-- header end -->
+
+          <div>
+            <div class="max-h-[472px] max-w-[260px]">
+              <img
+                class="w-full h-auto"
+                src="./assets/section two 1.webp"
+                alt=""
+              />
+            </div>
+            <div class="m-2 cursor-pointer">
+              <h1 class="hover:underline font-semibold">FOOD& DRINK</h1>
+              <p class="text-lg font-medium">Blue Tokai</p>
+            </div>
+          </div>
+          <div>
+            <div class="max-h-[472px] max-w-[260px]">
+              <img
+                class="w-full h-auto"
+                src="./assets/section two 2.webp"
+                alt=""
+              />
+            </div>
+            <div class="m-2 cursor-pointer">
+              <h1 class="hover:underline font-semibold">JEWELRY</h1>
+              <p class="text- font-medium">Quirksmith</p>
+            </div>
+          </div>
+          <div class="inline">
+            <div class="max-h-[472px] max-w-[260px]">
+              <img
+                class="w-full h-auto"
+                src="./assets/section two 3.webp"
+                alt=""
+              />
+            </div>
+            <div class="m-2 cursor-pointer">
+              <h1 class="hover:underline font-semibold">ELECTRONICS</h1>
+              <p class="text-lg font-medium">Crossbeats</p>
+            </div>
+          </div>
+          <div class="hide-four">
+            <div class="max-h-[472px] max-w-[260px]">
+              <img
+                class="w-full h-auto"
+                src="./assets/section two 4.webp"
+                alt=""
+              />
+            </div>
+            <div class="m-2 cursor-pointer">
+              <h1 class="hover:underline font-semibold">BEAUTY</h1>
+              <p class="text-lg font-medium">Mcaffeine</p>
+            </div>
+          </div>
+          <div class="hide-five">
+            <div class="max-h-[472px] max-w-[260px]">
+              <img
+                class="w-full h-auto"
+                src="./assets/section two 5.webp"
+                alt=""
+              />
+            </div>
+            <div class="m-2 cursor-pointer">
+              <h1 class="hover:underline font-semibold">FASHION</h1>
+              <p class="text-lg font-medium">Bunaai</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-20 py-12 px-[5%]">
+          <div class="mb-16">
+            <h1
+              class="font-medium text-3xl text-white md:text-left text-center"
+            >
+              Take the best path forward
+            </h1>
+          </div>
+          <div
+            class="flex flex-wrap md:justify-between justify-center max-w-[1346.5px]"
+          >
+            <div
+              class="max-w-[320px] flex flex-col gap-4 mb-5 md:items-start items-center"
+            >
+              <img class="w-12" src="./assets/sectionTwo-a.png" alt="a" />
+              <h1
+                class="text-white font-semibold text-lg md:text-left text-center"
+              >
+                Start an online business
+              </h1>
+              <p class="text-white md:text-left text-center">
+                Create a business, whether you’ve got a fresh idea or are
+                looking for a new way to make money.
+              </p>
+            </div>
+            <div
+              class="max-w-[320px] flex flex-col gap-4 mb-5 md:items-start items-center"
+            >
+              <img class="w-12" src="./assets/sectionTwo-b.png" alt="a" />
+              <h1 class="text-white font-semibold text-lg">
+                Move your business online
+              </h1>
+              <p class="text-white md:text-left text-center">
+                Turn your retail store into an online store and keep serving
+                customers without missing a beat.
+              </p>
+            </div>
+            <div
+              class="max-w-[320px] flex flex-col gap-4 mb-5 md:items-start items-center"
+            >
+              <img class="w-12" src="./assets/sectionTow-c.png" alt="a" />
+              <h1 class="text-white font-semibold text-lg">
+                Switch to Shopify
+              </h1>
+              <p class="text-white md:text-left text-center">
+                Bring your business to Shopify, no matter which ecommerce
+                platform you’re currently using.
+              </p>
+            </div>
+            <div
+              class="max-w-[320px] flex flex-col gap-4 mb-5 md:items-start items-center"
+            >
+              <img class="w-12" src="./assets/sectionTwo-d.png" alt="a" />
+              <h1 class="text-white font-semibold text-lg">
+                Hire a Shopify expert
+              </h1>
+              <p class="text-white md:text-left text-center">
+                Get set up with the help of a trusted freelancer or agency from
+                the Shopify Experts Marketplace.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- section two end -->
+
+    <!-- seciton three -->
+    <section class="flex flex-col items-center gap-12 py-20">
+      <!-- section three head -->
+      <div class="max-w-[604px] my-16">
+        <h1 class="text-4xl text-center m-4">With you wherever you’re going</h1>
+        <p class="text-gray-400 text-center text-lg">
+          With you wherever you’re going One platform with all the ecommerce and
+          point of sale features you need to start, run, and grow your business.
+        </p>
+      </div>
+      <!-- section three head end -->
+      <!-- block one -->
+      <div class="flex md:flex-row justify-center items-center flex-col">
+        <!-- left -->
+        <div class="w-1/2 flex justify-center items-center">
+          <div class="md:w-4/5">
+            <video
+              muted="muted"
+              loop="loop"
+              playsinline="playsinline"
+              data-autoplay="true"
+              data-lazyload="true"
+              data-poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg"
+              data-event-page="homepage"
+              data-event-category="homepage"
+              data-event-action="sell"
+              data-event-label="video-toggle"
+              class="video__video"
+              autoplay=""
+              poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg"
+            >
+              <source
+                data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"
+                type="video/webm"
+                src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"
+              />
+              <source
+                data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4"
+                type="video/mp4"
+                src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4"
+              />
+            </video>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="max-w-[500px]">
+          <h1 class="text-3xl">Sell everywhere</h1>
+          <p class="my-8 text-gray-500 text-lg">
+            Use one platform to sell products to anyone, anywhere—in person with
+            Point of Sale and online through your website, social media, and
+            online marketplaces.
+          </p>
+          <div class="cursor-pointer">
+            <p class="font-semibold text-[#008060]">Explore way to sell</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- block one end -->
+      <!-- block two -->
+      <div
+        class="flex md:flex-row-reverse justify-center items-center flex-col"
+      >
+        <!-- left -->
+        <div class="w-[40%] flex justify-center items-center">
+          <img
+            class="w-[80%]"
+            src="./assets/section three block two img.webp"
+            alt="section three block img"
+          />
+        </div>
+        <!-- right -->
+        <div class="max-w-[500px]">
+          <h1 class="text-3xl md:text-left">Market your business</h1>
+          <p class="my-8 text-gray-500 text-lg md:text-left">
+            Take the guesswork out of marketing with built-in tools that help
+            you create, execute, and analyze digital marketing campaigns.
+          </p>
+          <div class="cursor-pointer">
+            <p class="font-semibold text-[#008060]">
+              Explore how to market your porduct
             </p>
           </div>
         </div>
-        <!-- header end -->
+      </div>
+      <!-- block-two end -->
+
+      <!-- block three  -->
+      <div class="flex md:flex-row justify-center items-center flex-col">
+        <!-- left -->
+        <div class="w-[50%] flex justify-center items-center">
+          <img
+            src="./assets/section three block three.png"
+            alt="section three block img"
+          />
+        </div>
+        <!-- right -->
+        <div class="max-w-[500px]">
+          <h1 class="text-3xl md:text-left">Manage everything</h1>
+          <p class="my-8 text-gray-500 text-lg md:text-left">
+            Gain the insights you need to grow—use a single dashboard to manage
+            orders, shipping, and payments anywhere you go.
+          </p>
+          <div class="cursor-pointer">
+            <p class="font-semibold text-[#008060]">
+              Explore how to manage your business
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- block three end -->
+    </section>
+
+    <!-- seciton three end -->
+
+    <!-- section four -->
+    <section class="flex justify-center py-24 bg-[#f3fcf4]">
+      <div class="md:px-20 max-w-[1536px] px-8">
+        <!-- section three head -->
+        <div class="basis-full mb-10">
+          <h1
+            class="font-medium text-4xl md:text-left text-center text-darkGreen"
+          >
+            Explore more from Shopify in India
+          </h1>
+        </div>
+        <!-- section three head end -->
+        <!-- section three block -->
+        <div
+          class="flex md:flex-row justify-between items-center flex-col bg-white"
+        >
+          <!-- left -->
+          <div
+            class="p-8 flex flex-col justify-between md:text-left text-center"
+          >
+            <p class="font-semibold">START</p>
+            <div class="max-w-lg my-3">
+              <h1 class="mb-8 text-2xl">
+                Launch your store with the help of a Shopify Expert
+              </h1>
+              <p class="text-gray-600 md:text-lg text-base">
+                Find hundreds of experts from India ready to help you get your
+                store up and running, from choosing a theme to building a fully
+                customized site.
+              </p>
+            </div>
+            <div class="cursor-pointer md:my-0 my-4">
+              <p class="text-[#008060] font-semibold">
+                Browse experts in India
+              </p>
+            </div>
+          </div>
+          <!-- right -->
+          <div>
+            <img
+              class="md:max-w-[689px] h-auto"
+              src="./assets/section four img.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- section three block end -->
       </div>
     </section>
 
-    <!-- section two end -->
+    <!-- seciton four  end-->
+
+    <!-- section five -->
+    <section class="py-12 justify-center">
+      <div class="md:px-[10%] flex flex-col">
+        <!-- content -->
+        <div class="mb-11">
+          <h1 class="text-4xl">
+            Empowering independent business<br />
+            owners everywhere
+          </h1>
+          <p class="text-2xl my-6">
+            Millions of businesses in <b>175 countries</b> around the world
+            have<br />
+            made over <b>$496 billion</b> USD in sales using Shopify.
+          </p>
+          <div class="cursor-pointer md:my-0 my-4">
+            <p class="text-[#008060] font-semibold mb-4">
+              Learn more about Shopify
+            </p>
+          </div>
+        </div>
+        <!-- globe -->
+        <div class="max-h-[650px] max-w-[1337px]">
+          <img src="./assets/glob.png" alt="glob" />
+        </div>
+      </div>
+    </section>
+    <!-- section five end -->
+
+    <!-- section six -->
+    <section class="flex  justify-center bg-dardGreen">
+      <div class="flex md:flex-row flex-col">
+        <!-- left -->
+        <div class="w-1/2 h-full">
+          <img class="w-full" src="./assets/section six img.jpg" alt="img" />
+        </div>
+        <!-- right -->
+        <div class="p-8">
+          <h1>
+            “Shopify was my knight in shining armor when I exhausted every other
+            possibility of getting my online store up and running. It was
+            stunningly easy to use, with more features and plug-ins that I
+            didn’t even know I wanted.”
+          </h1>
+          <img src="./assets/section six icon.png" alt="icon" />
+          <p>Alicia | Alicia Souza</p>
+        </div>
+        <!-- bottom -->
+        <div class="basis-full"></div>
+      </div>
+    </section>
+    <!-- section six end -->
   </body>
+  <script>
+    const video = document.querySelector("#video");
+    const play_pause = document.querySelector("#play_pause");
+    const pause = document.querySelector("#pause");
+    const play = document.querySelector("#play");
+  </script>
 </html>
