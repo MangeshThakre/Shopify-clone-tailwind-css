@@ -1,4 +1,11 @@
 # Shopify-clone-tailwind-css
 
 
-![alt text](https://github.com/MangeshThakre/HTML-CSS-Project-15/blob/master/project-15.gif)
+
+| <h1>DESKTOP<h1>  | <h1>MOBILE<h1>  | 
+|---|---|
+| ![alt text](https://github.com/MangeshThakre/Shopify-clone-tailwind-css/blob/master/project%20image/desktop.gif)  | ![alt text](https://github.com/MangeshThakre/Shopify-clone-tailwind-css/blob/master/project%20image/responsive.gif)   | 
+
+
+
+
