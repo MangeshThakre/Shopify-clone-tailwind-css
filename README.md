@@ -14,7 +14,7 @@
 
 > #### This project took 10 hour to complete  
 
- ##  _[live project link]( shopify-clone-tailwind-css.netlify.app/  "rode-clone-tailwind-css" )_
+ ##  _[live project link]( https://shopify-clone-tailwind-css.netlify.app/  "rode-clone-tailwind-css" )_
 
 ## Demo
 
